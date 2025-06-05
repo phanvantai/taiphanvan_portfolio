@@ -29,6 +29,7 @@ type TranslationDictionary = {
             skills: string;
             portfolio: string;
             contact: string;
+            softdreams: string;
         };
         // Hero section
         hero: {
@@ -115,6 +116,7 @@ export const translations: TranslationDictionary = {
             skills: 'Skills',
             portfolio: 'Portfolio',
             contact: 'Contact',
+            softdreams: 'SoftDreams',
         },
         hero: {
             greeting: "Hello, I'm",
@@ -167,6 +169,10 @@ export const translations: TranslationDictionary = {
                 other: 'other',
             },
             projects: {
+                'softdreams': {
+                    name: 'SoftDreams',
+                    description: 'AI-powered personalized bedtime story generator for children',
+                },
                 'health-tracker': {
                     name: 'Health Tracker Pro',
                     description: 'iOS health monitoring app with Apple Health integration',
@@ -193,6 +199,14 @@ export const translations: TranslationDictionary = {
                 },
             },
             projectsData: [
+                {
+                    id: "softdreams",
+                    name: "SoftDreams",
+                    category: "ios",
+                    image: "softdreams.jpg",
+                    link: "/softdreams",
+                    detailsLink: "/softdreams"
+                },
                 {
                     id: "health-tracker",
                     name: "Health Tracker Pro",
@@ -280,6 +294,7 @@ export const translations: TranslationDictionary = {
             skills: 'Kỹ năng',
             portfolio: 'Dự án',
             contact: 'Liên hệ',
+            softdreams: 'SoftDreams',
         },
         hero: {
             greeting: "Xin chào, tôi là",
