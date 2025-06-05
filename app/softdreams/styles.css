@@ -992,6 +992,210 @@
     color: #fc8181;
 }
 
+/* Privacy Policy Page */
+.privacy-page {
+    background: var(--background-color);
+    min-height: 100vh;
+    padding: 2rem 0;
+    color: var(--text-color);
+}
+
+.privacy-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.privacy-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.privacy-last-updated {
+    font-size: 1rem;
+    color: var(--text-muted-color);
+    font-style: italic;
+}
+
+.privacy-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.privacy-section {
+    margin-bottom: 3rem;
+    background: var(--card-bg-color);
+    border-radius: 15px;
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.privacy-section .section-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+.section-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.section-content p:last-child {
+    margin-bottom: 0;
+}
+
+.subsection-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 1.5rem 0 1rem 0;
+    color: var(--text-color);
+}
+
+.privacy-list {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.privacy-list li {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+    position: relative;
+}
+
+.privacy-list li::before {
+    content: "•";
+    color: var(--primary-color);
+    font-weight: bold;
+    position: absolute;
+    left: -1rem;
+}
+
+.privacy-footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.back-to-app-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+.back-to-app-btn:hover {
+    background: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+    color: white;
+}
+
+.back-to-app-btn i {
+    font-size: 1rem;
+}
+
+/* SoftDreams Footer */
+.softdreams-footer {
+    background: var(--background-alt-color);
+    padding: 3rem 0 1rem 0;
+    border-top: 1px solid var(--border-color);
+    margin-top: 4rem;
+}
+
+.softdreams-footer .footer-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+.footer-brand h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.footer-brand p {
+    color: var(--text-muted-color);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.link-group h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.link-group a {
+    display: block;
+    color: var(--text-muted-color);
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.link-group a:hover {
+    color: var(--primary-color);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.footer-copyright p {
+    color: var(--text-muted-color);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.footer-badges {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.footer-badges .badge {
+    background: var(--background-color);
+    color: var(--text-muted-color);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid var(--border-color);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .softdreams-hero .container {
@@ -1082,5 +1286,60 @@
     .contact-info-card,
     .support-form {
         padding: 1.5rem;
+    }
+
+    .privacy-page {
+        padding: 1rem 0;
+    }
+
+    .privacy-title {
+        font-size: 2rem;
+    }
+
+    .privacy-section {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .privacy-section .section-title {
+        font-size: 1.5rem;
+    }
+
+    .section-content p,
+    .privacy-list li {
+        font-size: 0.95rem;
+    }
+
+    .subsection-title {
+        font-size: 1.2rem;
+    }
+
+    .back-to-app-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .softdreams-footer {
+        padding: 2rem 0 1rem 0;
+    }
+
+    .softdreams-footer .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .footer-badges {
+        justify-content: center;
     }
 }

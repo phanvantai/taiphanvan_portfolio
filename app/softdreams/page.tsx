@@ -1,7 +1,6 @@
 "use client"
 
 import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
 import BackToTop from '../components/BackToTop'
 import HeroSection from './components/HeroSection'
 import FeaturesSection from './components/FeaturesSection'
@@ -10,6 +9,7 @@ import ArchitectureSection from './components/ArchitectureSection'
 import ScreenshotsSection from './components/ScreenshotsSection'
 import DownloadSection from './components/DownloadSection'
 import SupportSection from './components/SupportSection'
+import SoftDreamsFooter from './components/SoftDreamsFooter'
 
 export default function SoftDreamsPage() {
     return (
@@ -24,7 +24,7 @@ export default function SoftDreamsPage() {
                 <DownloadSection />
                 <SupportSection />
             </main>
-            <Footer />
+            <SoftDreamsFooter />
             <BackToTop />
         </>
     )
