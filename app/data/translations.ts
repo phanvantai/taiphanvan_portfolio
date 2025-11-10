@@ -173,13 +173,13 @@ export const translations: TranslationDictionary = {
                     name: 'SoftDreams',
                     description: 'AI-powered personalized bedtime story generator for children',
                 },
+                'quick-spend': {
+                    name: 'Quick Spend',
+                    description: 'Flutter expense tracker with voice input and AI-powered categorization',
+                },
                 'health-tracker': {
                     name: 'Health Tracker Pro',
                     description: 'iOS health monitoring app with Apple Health integration',
-                },
-                'ecommerce': {
-                    name: 'E-commerce Solution',
-                    description: 'Cross-platform shopping app built with Flutter',
                 },
                 'smart-home': {
                     name: 'Smart Home Control',
@@ -208,18 +208,18 @@ export const translations: TranslationDictionary = {
                     detailsLink: "/softdreams"
                 },
                 {
+                    id: "quick-spend",
+                    name: "Quick Spend",
+                    category: "flutter",
+                    image: "quick-spend.jpg",
+                    link: "https://github.com/phanvantai/quick_spend",
+                    detailsLink: "https://github.com/phanvantai/quick_spend"
+                },
+                {
                     id: "health-tracker",
                     name: "Health Tracker Pro",
                     category: "ios",
                     image: "portfolio1.jpg",
-                    link: "#",
-                    detailsLink: "#"
-                },
-                {
-                    id: "ecommerce",
-                    name: "E-commerce Solution",
-                    category: "flutter",
-                    image: "portfolio2.jpg",
                     link: "#",
                     detailsLink: "#"
                 },
@@ -347,13 +347,13 @@ export const translations: TranslationDictionary = {
                 other: 'khác',
             },
             projects: {
+                'quick-spend': {
+                    name: 'Quick Spend',
+                    description: 'Ứng dụng Flutter quản lý chi tiêu với giọng nói và phân loại tự động bằng AI',
+                },
                 'health-tracker': {
                     name: 'Theo dõi sức khỏe Pro',
                     description: 'Ứng dụng theo dõi sức khỏe iOS tích hợp với Apple Health',
-                },
-                'ecommerce': {
-                    name: 'Giải pháp thương mại điện tử',
-                    description: 'Ứng dụng mua sắm đa nền tảng được xây dựng bằng Flutter',
                 },
                 'smart-home': {
                     name: 'Điều khiển nhà thông minh',
@@ -374,18 +374,18 @@ export const translations: TranslationDictionary = {
             },
             projectsData: [
                 {
+                    id: "quick-spend",
+                    name: "Quick Spend",
+                    category: "flutter",
+                    image: "quick-spend.jpg",
+                    link: "https://github.com/phanvantai/quick_spend",
+                    detailsLink: "https://github.com/phanvantai/quick_spend"
+                },
+                {
                     id: "health-tracker",
                     name: "Health Tracker Pro",
                     category: "ios",
                     image: "portfolio1.jpg",
-                    link: "#",
-                    detailsLink: "#"
-                },
-                {
-                    id: "ecommerce",
-                    name: "E-commerce Solution",
-                    category: "flutter",
-                    image: "portfolio2.jpg",
                     link: "#",
                     detailsLink: "#"
                 },
