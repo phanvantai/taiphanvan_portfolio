@@ -1,0 +1,7 @@
+/* Quick Spend styles can reuse SoftDreams styles */
+@import '../softdreams/styles.css';
+
+/* Override hero gradient for Quick Spend's mint green theme */
+.softdreams-hero {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}

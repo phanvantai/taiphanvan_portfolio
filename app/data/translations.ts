@@ -212,8 +212,8 @@ export const translations: TranslationDictionary = {
                     name: "Quick Spend",
                     category: "flutter",
                     image: "quick-spend.jpg",
-                    link: "https://github.com/phanvantai/quick_spend",
-                    detailsLink: "https://github.com/phanvantai/quick_spend"
+                    link: "/quickspend",
+                    detailsLink: "/quickspend"
                 },
                 {
                     id: "health-tracker",
@@ -378,8 +378,8 @@ export const translations: TranslationDictionary = {
                     name: "Quick Spend",
                     category: "flutter",
                     image: "quick-spend.jpg",
-                    link: "https://github.com/phanvantai/quick_spend",
-                    detailsLink: "https://github.com/phanvantai/quick_spend"
+                    link: "/quickspend",
+                    detailsLink: "/quickspend"
                 },
                 {
                     id: "health-tracker",
