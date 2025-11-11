@@ -33,7 +33,7 @@ export default function SupportSection() {
                 setFormStatus('error');
                 setTimeout(() => setFormStatus('idle'), 5000);
             }
-        } catch (error) {
+        } catch {
             setFormStatus('error');
             setTimeout(() => setFormStatus('idle'), 5000);
         }
