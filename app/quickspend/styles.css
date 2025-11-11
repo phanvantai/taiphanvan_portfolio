@@ -5,3 +5,70 @@
 .softdreams-hero {
     background: linear-gradient(135deg, #10b981 0%, #059669 100%);
 }
+
+/* Screenshots Gallery Styles */
+.screenshots-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.screenshot-item {
+    display: flex;
+    justify-content: center;
+}
+
+.screenshot-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.screenshot-img {
+    width: 100%;
+    height: auto;
+    max-width: 280px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.screenshot-img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.screenshot-caption {
+    text-align: center;
+    color: var(--text-muted-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .screenshots-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .screenshot-img {
+        max-width: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    .screenshots-gallery {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .screenshot-img {
+        max-width: 260px;
+    }
+}
