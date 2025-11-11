@@ -1,0 +1,125 @@
+/* Quick Spend styles can reuse SoftDreams styles */
+@import '../softdreams/styles.css';
+
+/* Override hero gradient for Quick Spend's mint green theme */
+.softdreams-hero {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+/* Hero Section Screenshot */
+.hero-phone-mockup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.hero-screenshot {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.hero-screenshot:hover {
+    transform: scale(1.05);
+}
+
+/* Screenshots Gallery Styles */
+.screenshots-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 280px));
+    gap: 2rem;
+    margin-top: 3rem;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.screenshot-item {
+    display: flex;
+    justify-content: center;
+    max-width: 280px;
+}
+
+.screenshot-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 280px;
+}
+
+.screenshot-img {
+    width: 280px !important;
+    height: auto !important;
+    max-width: 280px !important;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.screenshot-img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.screenshot-caption {
+    text-align: center;
+    color: var(--text-muted-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-screenshot {
+        max-width: 280px;
+    }
+
+    .screenshots-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 220px));
+        gap: 1.5rem;
+    }
+
+    .screenshot-item {
+        max-width: 220px;
+    }
+
+    .screenshot-image {
+        max-width: 220px;
+    }
+
+    .screenshot-img {
+        width: 220px !important;
+        max-width: 220px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-screenshot {
+        max-width: 260px;
+    }
+
+    .screenshots-gallery {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .screenshot-item {
+        max-width: 260px;
+    }
+
+    .screenshot-image {
+        max-width: 260px;
+    }
+
+    .screenshot-img {
+        width: 260px !important;
+        max-width: 260px !important;
+    }
+}
