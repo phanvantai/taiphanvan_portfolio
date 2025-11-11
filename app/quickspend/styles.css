@@ -6,6 +6,27 @@
     background: linear-gradient(135deg, #10b981 0%, #059669 100%);
 }
 
+/* Hero Section Screenshot */
+.hero-phone-mockup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.hero-screenshot {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.hero-screenshot:hover {
+    transform: scale(1.05);
+}
+
 /* Screenshots Gallery Styles */
 .screenshots-gallery {
     display: grid;
@@ -56,6 +77,10 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+    .hero-screenshot {
+        max-width: 280px;
+    }
+
     .screenshots-gallery {
         grid-template-columns: repeat(auto-fit, minmax(200px, 220px));
         gap: 1.5rem;
@@ -76,6 +101,10 @@
 }
 
 @media (max-width: 480px) {
+    .hero-screenshot {
+        max-width: 260px;
+    }
+
     .screenshots-gallery {
         grid-template-columns: 1fr;
         gap: 2rem;

@@ -62,30 +62,12 @@ export default function HeroSection() {
                 </div>
 
                 <div className="hero-image">
-                    <div className="phone-mockup">
-                        <div className="phone-frame">
-                            <div className="phone-screen">
-                                <div className="app-preview">
-                                    <div className="preview-header">
-                                        <div className="status-bar">
-                                            <span>9:41</span>
-                                            <div className="battery-indicator"></div>
-                                        </div>
-                                        <h3>Quick Spend</h3>
-                                    </div>
-                                    <div className="preview-content">
-                                        <div className="story-card">
-                                            <div className="story-emoji">💰</div>
-                                            <h4>50k Coffee</h4>
-                                            <p>Food • Today</p>
-                                        </div>
-                                        <div className="generate-button">
-                                            <span>🎤 Add Expense</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div className="hero-phone-mockup">
+                        <img
+                            src="/images/quickspend/home.png"
+                            alt="Quick Spend App Screenshot"
+                            className="hero-screenshot"
+                        />
                     </div>
                 </div>
             </div>
