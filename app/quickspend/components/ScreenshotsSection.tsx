@@ -31,8 +31,8 @@ export default function ScreenshotsSection() {
                                 <Image
                                     src={`/images/quickspend/${screenshot.file}`}
                                     alt={screenshot.name}
-                                    width={393}
-                                    height={852}
+                                    width={280}
+                                    height={607}
                                     className="screenshot-img"
                                 />
                                 <p className="screenshot-caption">{screenshot.name}</p>
