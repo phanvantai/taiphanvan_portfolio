@@ -1,5 +1,6 @@
 "use client"
 
+import './styles.css'
 import Navbar from '../components/Navbar'
 import BackToTop from '../components/BackToTop'
 import HeroSection from './components/HeroSection'
