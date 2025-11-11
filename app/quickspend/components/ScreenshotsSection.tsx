@@ -1,6 +1,5 @@
 "use client"
 
-import Image from 'next/image'
 import { useLanguage } from '../../contexts/LanguageContext'
 import { quickSpendTranslations } from '../translations'
 
@@ -28,11 +27,9 @@ export default function ScreenshotsSection() {
                     {screenshots.map((screenshot) => (
                         <div key={screenshot.key} className="screenshot-item">
                             <div className="screenshot-image">
-                                <Image
+                                <img
                                     src={`/images/quickspend/${screenshot.file}`}
                                     alt={screenshot.name}
-                                    width={280}
-                                    height={607}
                                     className="screenshot-img"
                                 />
                                 <p className="screenshot-caption">{screenshot.name}</p>
