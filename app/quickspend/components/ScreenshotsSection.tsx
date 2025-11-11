@@ -1,5 +1,6 @@
 "use client"
 
+import Image from 'next/image'
 import { useLanguage } from '../../contexts/LanguageContext'
 import { quickSpendTranslations } from '../translations'
 
@@ -8,11 +9,11 @@ export default function ScreenshotsSection() {
     const t = quickSpendTranslations[language];
 
     const screenshots = [
-        { key: 'onboarding', name: t.screenshots.gallery.onboarding },
-        { key: 'home', name: t.screenshots.gallery.home },
-        { key: 'voiceInput', name: t.screenshots.gallery.voiceInput },
-        { key: 'statistics', name: t.screenshots.gallery.statistics },
-        { key: 'settings', name: t.screenshots.gallery.settings },
+        { key: 'onboarding', name: t.screenshots.gallery.onboarding, file: 'onboarding.png' },
+        { key: 'home', name: t.screenshots.gallery.home, file: 'home.png' },
+        { key: 'voiceInput', name: t.screenshots.gallery.voiceInput, file: 'voice-input.png' },
+        { key: 'statistics', name: t.screenshots.gallery.statistics, file: 'statistics.png' },
+        { key: 'settings', name: t.screenshots.gallery.settings, file: 'settings.png' },
     ];
 
     return (
@@ -26,9 +27,15 @@ export default function ScreenshotsSection() {
                 <div className="screenshots-gallery">
                     {screenshots.map((screenshot) => (
                         <div key={screenshot.key} className="screenshot-item">
-                            <div className="screenshot-placeholder">
-                                <i className="fas fa-image"></i>
-                                <p>{screenshot.name}</p>
+                            <div className="screenshot-image">
+                                <Image
+                                    src={`/images/quickspend/${screenshot.file}`}
+                                    alt={screenshot.name}
+                                    width={393}
+                                    height={852}
+                                    className="screenshot-img"
+                                />
+                                <p className="screenshot-caption">{screenshot.name}</p>
                             </div>
                         </div>
                     ))}
