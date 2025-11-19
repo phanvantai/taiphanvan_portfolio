@@ -214,8 +214,8 @@ export const quickSpendTranslations: QuickSpendTranslationDictionary = {
     en: {
         hero: {
             title: "Quick Spend",
-            subtitle: "Smart Expense Tracking with Voice Input",
-            description: "A Flutter mobile app for quickly logging expenses with voice input and automatic AI categorization. Supports both English and Vietnamese languages with bilingual slang recognition.",
+            subtitle: "Smart Expense & Income Tracking with Voice Input",
+            description: "A Flutter mobile app for quickly logging expenses and income with AI-powered voice input. Supports 6 languages (English, Vietnamese, Japanese, Korean, Thai, Spanish) with natural language understanding and slang recognition across 6 currencies.",
             downloadBtn: "Download on App Store",
             viewGithub: "View on GitHub",
             badges: {
@@ -233,33 +233,33 @@ export const quickSpendTranslations: QuickSpendTranslationDictionary = {
                 items: [
                     {
                         icon: "🎤",
-                        title: "Voice Input",
-                        description: "Natural language voice input in Vietnamese and English with automatic speech-to-text conversion"
+                        title: "Voice Input - 6 Languages",
+                        description: "Natural language voice input in English, Vietnamese, Japanese, Korean, Thai, and Spanish with automatic speech-to-text conversion"
                     },
                     {
                         icon: "🤖",
                         title: "AI-Powered Categorization",
-                        description: "Automatic expense categorization using Firebase AI with Gemini 2.5 Flash for accurate parsing"
+                        description: "Automatic categorization using Gemini 2.5 Flash with 15 daily AI parses, plus unlimited fallback rule-based parsing"
+                    },
+                    {
+                        icon: "💰",
+                        title: "Expense & Income Tracking",
+                        description: "Track both expenses and income across 13 categories (7 expense + 6 income) with color-coded display"
                     },
                     {
                         icon: "🌏",
-                        title: "Bilingual Support",
-                        description: "Full support for English and Vietnamese with slang recognition (ca, củ, nghìn, triệu)"
+                        title: "Multi-Language Support",
+                        description: "Fully localized in 6 languages with slang recognition (Vietnamese: ca/củ/cọc, etc.) across 6 major currencies"
                     },
                     {
                         icon: "💾",
-                        title: "Local SQLite Database",
-                        description: "Fast and reliable local data storage with complete offline functionality"
+                        title: "Local-First Storage",
+                        description: "SQLite database with complete offline functionality. Export to JSON (full backup), import with duplicate detection"
                     },
                     {
                         icon: "📊",
-                        title: "Rich Analytics",
-                        description: "Comprehensive statistics with donut charts, trend analysis, and category breakdowns"
-                    },
-                    {
-                        icon: "🎨",
-                        title: "Material Design 3",
-                        description: "Beautiful mint green gradient UI with modern Material Design components"
+                        title: "Advanced Analytics",
+                        description: "Donut charts, trend analysis, calendar view, period filtering, and comparison between current and previous periods"
                     }
                 ]
             },
@@ -269,47 +269,47 @@ export const quickSpendTranslations: QuickSpendTranslationDictionary = {
                     {
                         icon: "💬",
                         title: "Natural Language",
-                        description: "Understands phrases like '50k coffee' or '1.5m shopping' automatically"
+                        description: "Understands phrases like '50k coffee' or '1.5m shopping' automatically across all 6 supported languages"
                     },
                     {
                         icon: "🔢",
                         title: "Multiple Formats",
-                        description: "Supports various number formats: 50k, 1.5m, 100 nghìn, 45 ca tiền"
+                        description: "Supports various number formats: 50k, 1.5m, 100 nghìn, 45 ca tiền, and more in different languages"
                     },
                     {
                         icon: "📝",
                         title: "Batch Entry",
-                        description: "Extract multiple expenses from a single voice or text input"
+                        description: "Extract multiple expenses/income entries from a single voice or text input (e.g., '50k coffee and 30k parking')"
                     },
                     {
                         icon: "🏷️",
-                        title: "Auto-Categorization",
-                        description: "7 categories with keyword-based confidence scoring (Food, Transport, Shopping, Bills, Health, Entertainment, Other)"
+                        title: "Smart Categorization",
+                        description: "13 fully localized categories with custom category creation, icons, and colors. Context-based auto-categorization"
                     }
                 ]
             },
             analyticsFeatures: {
-                title: "Analytics & Insights",
+                title: "Analytics & Data Management",
                 items: [
                     {
                         icon: "📈",
-                        title: "Spending Trends",
-                        description: "Track your spending patterns over time with visual charts"
+                        title: "Comprehensive Trends",
+                        description: "Track spending/income patterns with donut charts, trend analysis, and period comparison (current vs previous)"
                     },
                     {
                         icon: "📅",
-                        title: "Period Filtering",
-                        description: "Filter by Today, Week, Month, Year, or Custom date ranges"
+                        title: "Calendar View & Filtering",
+                        description: "Calendar showing daily totals, filter by Today, Week, Month, Year, or Custom date ranges"
                     },
                     {
-                        icon: "🎯",
-                        title: "Top Expenses",
-                        description: "Identify your biggest spending categories and items"
+                        icon: "📤",
+                        title: "Export & Import",
+                        description: "Export to JSON for complete backup with categories and settings. Import from JSON with automatic duplicate detection"
                     },
                     {
                         icon: "✏️",
                         title: "Easy Management",
-                        description: "Swipeable cards for quick editing and deletion of expenses"
+                        description: "Swipeable cards for quick editing and deletion. Custom categories with personalized icons and colors"
                     }
                 ]
             }
@@ -431,7 +431,7 @@ export const quickSpendTranslations: QuickSpendTranslationDictionary = {
         },
         privacy: {
             title: "Privacy Policy",
-            lastUpdated: "Last updated: January 2025",
+            lastUpdated: "Last updated: November 2025",
             sections: {
                 introduction: {
                     title: "Introduction",
@@ -448,42 +448,48 @@ export const quickSpendTranslations: QuickSpendTranslationDictionary = {
                         "Data collected and stored locally on your device:"
                     ],
                     items: [
-                        "Expense data: amounts, descriptions, categories, and dates",
+                        "Expense and income data: amounts, descriptions, categories, and dates",
                         "Voice input: temporarily processed for speech-to-text conversion (not stored)",
-                        "User preferences: currency, language, and app settings",
+                        "User preferences: currency, language, and app settings across 6 languages and 6 currencies",
                         "All personal data is stored locally on your device only",
                         "No financial account information or passwords are collected",
+                        "Optional anonymized data for ML training: Only if you explicitly opt-in, we collect fully anonymized transaction patterns (amount, category, date) - NEVER descriptions, user IDs, or any identifiable information",
                         "Basic device information for app compatibility"
                     ]
                 },
                 dataStorage: {
                     title: "Data Storage",
                     content: [
-                        "All your expense data is stored locally on your device using SQLite database.",
-                        "Your data never leaves your device except when using AI categorization features.",
+                        "All your expense and income data is stored locally on your device using SQLite database.",
+                        "Your data never leaves your device except when using AI categorization features or if you opt-in to ML training data collection.",
+                        "You can export your data to JSON (complete backup with categories and settings) for backup purposes.",
+                        "Import functionality supports JSON with automatic duplicate detection and version compatibility (v1.0-v4.0).",
                         "You have complete control over your data and can delete it at any time.",
                         "No cloud backup or sync features mean your data stays private on your device."
                     ]
                 },
                 aiDataProcessing: {
-                    title: "AI Data Processing",
+                    title: "AI Data Processing & ML Training",
                     content: [
-                        "When using voice input and AI categorization features:",
-                        "Voice audio is temporarily sent to speech-to-text services for conversion only",
-                        "Expense descriptions are sent to Firebase AI (Gemini 2.5 Flash) for categorization",
-                        "Only the expense description text is sent - no personal information or amounts",
-                        "AI processing happens in real-time and no data is stored on external servers",
-                        "You can disable AI features and enter expenses manually if preferred"
+                        "AI Categorization: Voice audio is temporarily sent to speech-to-text services (supports 6 languages). Transaction descriptions are sent to Firebase AI (Gemini 2.5 Flash) for parsing and categorization.",
+                        "Daily limit of 15 Gemini AI parses with unlimited fallback rule-based parsing for reliability.",
+                        "Only the description text is sent - no personal information or amounts.",
+                        "AI processing happens in real-time and no data is stored on external servers.",
+                        "Optional ML Training Data (Opt-In Only): If you explicitly consent, we collect anonymized transaction patterns (amount, category, date only) to improve future ML models.",
+                        "ML training data NEVER includes descriptions, user IDs, device information, or any personally identifiable information.",
+                        "You can opt-out of ML training data collection at any time in Settings.",
+                        "You can disable AI features entirely and use manual entry if preferred."
                     ]
                 },
                 dataSharing: {
                     title: "How We Share Your Information",
                     content: [
-                        "We do not sell, trade, or rent your personal expense data to third parties.",
+                        "We do not sell, trade, or rent your personal expense/income data to third parties.",
                         "Limited data sharing occurs only for essential app functionality:",
-                        "Speech-to-text services: Voice audio for conversion (temporary, not stored)",
-                        "Firebase AI: Expense descriptions for categorization (temporary, not stored)",
-                        "No analytics, advertising, or tracking services are used",
+                        "Speech-to-text services: Voice audio for conversion in 6 supported languages (temporary, not stored)",
+                        "Firebase AI: Transaction descriptions for categorization (temporary, not stored)",
+                        "Optional ML Training: Anonymized transaction patterns (amount, category, date only) if you opt-in - NEVER descriptions or identifiable info",
+                        "No analytics, advertising, or user tracking services are used",
                         "Your financial data remains completely private on your device"
                     ]
                 },
@@ -494,10 +500,13 @@ export const quickSpendTranslations: QuickSpendTranslationDictionary = {
                     ],
                     rights: [
                         "Access: All your data is accessible within the app",
-                        "Modification: Edit or update any expense at any time",
-                        "Deletion: Delete individual expenses or clear all data",
-                        "Export: Export your data for backup purposes",
+                        "Modification: Edit or update any expense or income entry at any time",
+                        "Deletion: Delete individual transactions or clear all data",
+                        "Export: Export to JSON (full backup with categories and settings)",
+                        "Import: Import from JSON with automatic duplicate detection",
                         "Disable AI: Turn off AI features and use manual entry",
+                        "ML Training Opt-Out: Disable anonymized ML training data collection at any time in Settings",
+                        "Custom Categories: Create personalized categories with custom icons and colors",
                         "Uninstall: Deleting the app removes all local data"
                     ]
                 },
@@ -534,7 +543,7 @@ export const quickSpendTranslations: QuickSpendTranslationDictionary = {
         },
         terms: {
             title: "Terms of Service",
-            lastUpdated: "Last updated: January 2025",
+            lastUpdated: "Last updated: November 2025",
             introduction: {
                 title: "Introduction",
                 content: [
@@ -554,12 +563,15 @@ export const quickSpendTranslations: QuickSpendTranslationDictionary = {
             description: {
                 title: "Description of Service",
                 content: [
-                    "Quick Spend is an expense tracking mobile application that provides:",
-                    "Voice input for quick expense logging",
-                    "AI-powered automatic categorization",
-                    "Local SQLite database storage",
-                    "Statistics and spending analysis",
-                    "Bilingual support (English and Vietnamese)",
+                    "Quick Spend is an expense and income tracking mobile application that provides:",
+                    "Voice input for quick transaction logging in 6 languages (English, Vietnamese, Japanese, Korean, Thai, Spanish)",
+                    "AI-powered automatic categorization with Gemini 2.5 Flash (15 daily AI parses + unlimited fallback parsing)",
+                    "Local SQLite database storage with complete offline functionality",
+                    "13 default categories (7 expense + 6 income) with custom category creation",
+                    "Statistics, analytics, and trend comparison with calendar view",
+                    "Export to JSON and import with duplicate detection",
+                    "Optional anonymized ML training data collection (opt-in only, never includes descriptions or identifiable info)",
+                    "Support for 6 currencies with fully localized interfaces",
                     "The Service is provided 'as is' and we reserve the right to modify, suspend, or discontinue any part of the Service at any time."
                 ]
             },
@@ -588,22 +600,25 @@ export const quickSpendTranslations: QuickSpendTranslationDictionary = {
                 ]
             },
             expenseData: {
-                title: "Expense Data and Privacy",
+                title: "Transaction Data and Privacy",
                 content: [
-                    "You retain full ownership of all expense data you enter into the Service.",
+                    "You retain full ownership of all expense and income data you enter into the Service.",
                     "Your data is stored locally on your device and is not transmitted to our servers.",
-                    "Limited data (expense descriptions) may be sent to AI services for categorization only.",
-                    "You are responsible for backing up your data if desired.",
+                    "Limited data (transaction descriptions) may be sent to AI services for categorization only.",
+                    "Optional ML Training: If you explicitly opt-in, anonymized transaction patterns (amount, category, date only) may be collected. NEVER descriptions, user IDs, or identifiable information.",
+                    "You can export your data to JSON (full backup) and are responsible for backing up if desired.",
                     "We are not responsible for any loss of data."
                 ]
             },
             aiServices: {
-                title: "AI Services",
+                title: "AI Services & ML Training Data",
                 content: [
-                    "Quick Spend uses AI services for automatic expense categorization.",
-                    "AI categorization is provided for convenience and may not always be accurate.",
-                    "You can review and modify AI-generated categories at any time.",
-                    "You can disable AI features and use manual categorization if preferred.",
+                    "Quick Spend uses Firebase AI (Gemini 2.5 Flash) for automatic transaction parsing and categorization.",
+                    "AI processing includes voice-to-text (6 languages) and natural language understanding with daily limit of 15 Gemini parses plus unlimited fallback parsing.",
+                    "AI categorization is provided for convenience and may not always be accurate. You can review and modify AI-generated categories at any time.",
+                    "Optional ML Training: You may opt-in to contribute anonymized transaction data (amount, category, date only) to help improve future ML models. This NEVER includes descriptions, user IDs, or any identifiable information.",
+                    "You can opt-out of ML training data collection at any time in app Settings.",
+                    "You can disable AI features entirely and use manual categorization if preferred.",
                     "We do not guarantee 100% accuracy of AI categorization."
                 ]
             },
@@ -622,7 +637,8 @@ export const quickSpendTranslations: QuickSpendTranslationDictionary = {
                     "The Service is provided on an 'as is' and 'as available' basis.",
                     "We make no warranties, express or implied, regarding the Service.",
                     "We do not warrant that the Service will be uninterrupted, secure, or error-free.",
-                    "Expense tracking is for personal use and should not replace professional financial advice.",
+                    "Expense and income tracking is for personal use and should not replace professional financial advice.",
+                    "AI categorization and ML models are provided for convenience and may not always be accurate.",
                     "You use the Service at your own risk."
                 ]
             },
@@ -673,8 +689,8 @@ export const quickSpendTranslations: QuickSpendTranslationDictionary = {
     vi: {
         hero: {
             title: "Quick Spend",
-            subtitle: "Quản Lý Chi Tiêu Thông Minh Với Giọng Nói",
-            description: "Ứng dụng Flutter quản lý chi tiêu nhanh chóng với giọng nói và phân loại tự động bằng AI. Hỗ trợ cả tiếng Anh và tiếng Việt với nhận dạng tiếng lóng.",
+            subtitle: "Quản Lý Chi Tiêu & Thu Nhập Thông Minh Với Giọng Nói",
+            description: "Ứng dụng Flutter quản lý chi tiêu và thu nhập nhanh chóng với giọng nói AI. Hỗ trợ 6 ngôn ngữ (Tiếng Anh, Tiếng Việt, Tiếng Nhật, Tiếng Hàn, Tiếng Thái, Tiếng Tây Ban Nha) với nhận dạng ngôn ngữ tự nhiên và tiếng lóng trên 6 loại tiền tệ.",
             downloadBtn: "Tải về App Store",
             viewGithub: "Xem trên GitHub",
             badges: {
@@ -692,33 +708,33 @@ export const quickSpendTranslations: QuickSpendTranslationDictionary = {
                 items: [
                     {
                         icon: "🎤",
-                        title: "Nhập Bằng Giọng Nói",
-                        description: "Nhập liệu tự nhiên bằng tiếng Việt và tiếng Anh với chuyển đổi giọng nói thành văn bản tự động"
+                        title: "Nhập Giọng Nói - 6 Ngôn Ngữ",
+                        description: "Nhập liệu tự nhiên bằng Tiếng Anh, Tiếng Việt, Tiếng Nhật, Tiếng Hàn, Tiếng Thái và Tiếng Tây Ban Nha với chuyển đổi giọng nói tự động"
                     },
                     {
                         icon: "🤖",
                         title: "Phân Loại Bằng AI",
-                        description: "Tự động phân loại chi tiêu sử dụng Firebase AI với Gemini 2.5 Flash"
+                        description: "Tự động phân loại bằng Gemini 2.5 Flash với 15 lượt AI mỗi ngày, cộng thêm phân tích dự phòng không giới hạn"
+                    },
+                    {
+                        icon: "💰",
+                        title: "Theo Dõi Chi Tiêu & Thu Nhập",
+                        description: "Theo dõi cả chi tiêu và thu nhập qua 13 danh mục (7 chi tiêu + 6 thu nhập) với màu sắc phân biệt"
                     },
                     {
                         icon: "🌏",
-                        title: "Hỗ Trợ Song Ngữ",
-                        description: "Hỗ trợ đầy đủ tiếng Anh và tiếng Việt với nhận dạng tiếng lóng (ca, củ, nghìn, triệu)"
+                        title: "Hỗ Trợ Đa Ngôn Ngữ",
+                        description: "Bản địa hóa đầy đủ cho 6 ngôn ngữ với nhận dạng tiếng lóng (Việt Nam: ca/củ/cọc, v.v.) trên 6 loại tiền tệ"
                     },
                     {
                         icon: "💾",
-                        title: "Cơ Sở Dữ Liệu SQLite",
-                        description: "Lưu trữ dữ liệu cục bộ nhanh và đáng tin cậy với chức năng offline hoàn toàn"
+                        title: "Lưu Trữ Cục Bộ Ưu Tiên",
+                        description: "Cơ sở dữ liệu SQLite với chức năng offline hoàn toàn. Xuất JSON (sao lưu đầy đủ), nhập với phát hiện trùng lặp"
                     },
                     {
                         icon: "📊",
-                        title: "Phân Tích Chi Tiết",
-                        description: "Thống kê toàn diện với biểu đồ tròn, phân tích xu hướng và phân loại theo danh mục"
-                    },
-                    {
-                        icon: "🎨",
-                        title: "Material Design 3",
-                        description: "Giao diện gradient màu xanh mint đẹp mắt với các thành phần Material Design hiện đại"
+                        title: "Phân Tích Nâng Cao",
+                        description: "Biểu đồ tròn, phân tích xu hướng, xem lịch, lọc theo thời gian và so sánh giai đoạn hiện tại với trước đó"
                     }
                 ]
             },
@@ -728,47 +744,47 @@ export const quickSpendTranslations: QuickSpendTranslationDictionary = {
                     {
                         icon: "💬",
                         title: "Ngôn Ngữ Tự Nhiên",
-                        description: "Hiểu các cụm từ như '50k cà phê' hoặc '1.5m shopping' tự động"
+                        description: "Hiểu các cụm từ như '50k cà phê' hoặc '1.5m shopping' tự động trên tất cả 6 ngôn ngữ được hỗ trợ"
                     },
                     {
                         icon: "🔢",
                         title: "Nhiều Định Dạng",
-                        description: "Hỗ trợ nhiều định dạng số: 50k, 1.5m, 100 nghìn, 45 ca tiền"
+                        description: "Hỗ trợ nhiều định dạng số: 50k, 1.5m, 100 nghìn, 45 ca tiền và nhiều hơn nữa trong các ngôn ngữ khác"
                     },
                     {
                         icon: "📝",
                         title: "Nhập Hàng Loạt",
-                        description: "Trích xuất nhiều khoản chi từ một lần nhập giọng nói hoặc văn bản"
+                        description: "Trích xuất nhiều chi tiêu/thu nhập từ một lần nhập giọng nói hoặc văn bản (ví dụ: '50k cà phê và 30k đỗ xe')"
                     },
                     {
                         icon: "🏷️",
-                        title: "Tự Động Phân Loại",
-                        description: "7 danh mục với chấm điểm độ tin cậy (Ăn uống, Di chuyển, Mua sắm, Hóa đơn, Sức khỏe, Giải trí, Khác)"
+                        title: "Phân Loại Thông Minh",
+                        description: "13 danh mục được bản địa hóa đầy đủ với tạo danh mục tùy chỉnh, biểu tượng và màu sắc. Tự động phân loại theo ngữ cảnh"
                     }
                 ]
             },
             analyticsFeatures: {
-                title: "Phân Tích & Thống Kê",
+                title: "Phân Tích & Quản Lý Dữ Liệu",
                 items: [
                     {
                         icon: "📈",
-                        title: "Xu Hướng Chi Tiêu",
-                        description: "Theo dõi mô hình chi tiêu của bạn theo thời gian với biểu đồ trực quan"
+                        title: "Xu Hướng Toàn Diện",
+                        description: "Theo dõi mô hình chi tiêu/thu nhập với biểu đồ tròn, phân tích xu hướng và so sánh giai đoạn (hiện tại vs trước đó)"
                     },
                     {
                         icon: "📅",
-                        title: "Lọc Theo Thời Gian",
-                        description: "Lọc theo Hôm nay, Tuần, Tháng, Năm hoặc Tùy chỉnh"
+                        title: "Xem Lịch & Lọc",
+                        description: "Lịch hiển thị tổng hàng ngày, lọc theo Hôm nay, Tuần, Tháng, Năm hoặc Tùy chỉnh"
                     },
                     {
-                        icon: "🎯",
-                        title: "Chi Tiêu Hàng Đầu",
-                        description: "Xác định các danh mục và khoản chi tiêu lớn nhất của bạn"
+                        icon: "📤",
+                        title: "Xuất & Nhập",
+                        description: "Xuất sang JSON để sao lưu đầy đủ với danh mục và cài đặt. Nhập từ JSON với phát hiện trùng lặp tự động"
                     },
                     {
                         icon: "✏️",
                         title: "Quản Lý Dễ Dàng",
-                        description: "Thẻ có thể vuốt để chỉnh sửa và xóa chi tiêu nhanh chóng"
+                        description: "Thẻ có thể vuốt để chỉnh sửa và xóa nhanh. Danh mục tùy chỉnh với biểu tượng và màu sắc cá nhân hóa"
                     }
                 ]
             }
@@ -890,7 +906,7 @@ export const quickSpendTranslations: QuickSpendTranslationDictionary = {
         },
         privacy: {
             title: "Chính Sách Bảo Mật",
-            lastUpdated: "Cập nhật lần cuối: Tháng 1 2025",
+            lastUpdated: "Cập nhật lần cuối: Tháng 11 2025",
             sections: {
                 introduction: {
                     title: "Giới Thiệu",
@@ -907,42 +923,48 @@ export const quickSpendTranslations: QuickSpendTranslationDictionary = {
                         "Dữ liệu được thu thập và lưu trữ cục bộ trên thiết bị của bạn:"
                     ],
                     items: [
-                        "Dữ liệu chi tiêu: số tiền, mô tả, danh mục và ngày tháng",
+                        "Dữ liệu chi tiêu và thu nhập: số tiền, mô tả, danh mục và ngày tháng",
                         "Đầu vào giọng nói: được xử lý tạm thời để chuyển đổi thành văn bản (không lưu trữ)",
-                        "Tùy chọn người dùng: tiền tệ, ngôn ngữ và cài đặt ứng dụng",
+                        "Tùy chọn người dùng: tiền tệ, ngôn ngữ và cài đặt ứng dụng trên 6 ngôn ngữ và 6 loại tiền tệ",
                         "Tất cả dữ liệu cá nhân chỉ được lưu trữ cục bộ trên thiết bị của bạn",
                         "Không thu thập thông tin tài khoản tài chính hoặc mật khẩu",
+                        "Dữ liệu ẩn danh tùy chọn cho ML training: Chỉ khi bạn chọn tham gia, chúng tôi thu thập các mẫu giao dịch ẩn danh hoàn toàn (số tiền, danh mục, ngày) - KHÔNG BAO GIỜ mô tả, ID người dùng hoặc bất kỳ thông tin nhận dạng nào",
                         "Thông tin thiết bị cơ bản để tương thích ứng dụng"
                     ]
                 },
                 dataStorage: {
                     title: "Lưu Trữ Dữ Liệu",
                     content: [
-                        "Tất cả dữ liệu chi tiêu của bạn được lưu trữ cục bộ trên thiết bị của bạn bằng cơ sở dữ liệu SQLite.",
-                        "Dữ liệu của bạn không bao giờ rời khỏi thiết bị trừ khi sử dụng tính năng phân loại AI.",
+                        "Tất cả dữ liệu chi tiêu và thu nhập của bạn được lưu trữ cục bộ trên thiết bị bằng cơ sở dữ liệu SQLite.",
+                        "Dữ liệu của bạn không bao giờ rời khỏi thiết bị trừ khi sử dụng tính năng phân loại AI hoặc nếu bạn chọn tham gia thu thập dữ liệu ML training.",
+                        "Bạn có thể xuất dữ liệu sang JSON (sao lưu đầy đủ với danh mục và cài đặt) để sao lưu.",
+                        "Chức năng nhập hỗ trợ JSON với phát hiện trùng lặp tự động và tương thích phiên bản (v1.0-v4.0).",
                         "Bạn có toàn quyền kiểm soát dữ liệu của mình và có thể xóa bất cứ lúc nào.",
                         "Không có tính năng sao lưu hoặc đồng bộ đám mây có nghĩa là dữ liệu của bạn vẫn riêng tư trên thiết bị."
                     ]
                 },
                 aiDataProcessing: {
-                    title: "Xử Lý Dữ Liệu AI",
+                    title: "Xử Lý Dữ Liệu AI & ML Training",
                     content: [
-                        "Khi sử dụng tính năng nhập giọng nói và phân loại AI:",
-                        "Âm thanh giọng nói được gửi tạm thời đến dịch vụ chuyển đổi giọng nói thành văn bản",
-                        "Mô tả chi tiêu được gửi đến Firebase AI (Gemini 2.5 Flash) để phân loại",
-                        "Chỉ văn bản mô tả chi tiêu được gửi - không có thông tin cá nhân hoặc số tiền",
-                        "Xử lý AI diễn ra theo thời gian thực và không lưu trữ dữ liệu trên máy chủ bên ngoài",
-                        "Bạn có thể tắt tính năng AI và nhập chi tiêu thủ công nếu muốn"
+                        "Phân loại AI: Âm thanh giọng nói được gửi tạm thời đến dịch vụ chuyển đổi giọng nói thành văn bản (hỗ trợ 6 ngôn ngữ). Mô tả giao dịch được gửi đến Firebase AI (Gemini 2.5 Flash) để phân tích và phân loại.",
+                        "Giới hạn hàng ngày 15 lượt phân tích Gemini AI với phân tích dự phòng dựa trên quy tắc không giới hạn để đảm bảo độ tin cậy.",
+                        "Chỉ văn bản mô tả được gửi - không có thông tin cá nhân hoặc số tiền.",
+                        "Xử lý AI diễn ra theo thời gian thực và không lưu trữ dữ liệu trên máy chủ bên ngoài.",
+                        "Dữ liệu ML Training Tùy chọn (Chỉ khi Chọn tham gia): Nếu bạn đồng ý rõ ràng, chúng tôi thu thập các mẫu giao dịch ẩn danh (chỉ số tiền, danh mục, ngày) để cải thiện các mô hình ML trong tương lai.",
+                        "Dữ liệu ML training KHÔNG BAO GIỜ bao gồm mô tả, ID người dùng, thông tin thiết bị hoặc bất kỳ thông tin nhận dạng cá nhân nào.",
+                        "Bạn có thể từ chối thu thập dữ liệu ML training bất cứ lúc nào trong Cài đặt.",
+                        "Bạn có thể tắt hoàn toàn tính năng AI và sử dụng nhập thủ công nếu muốn."
                     ]
                 },
                 dataSharing: {
                     title: "Cách Chúng Tôi Chia Sẻ Thông Tin",
                     content: [
-                        "Chúng tôi không bán, trao đổi hoặc cho thuê dữ liệu chi tiêu cá nhân của bạn cho bên thứ ba.",
+                        "Chúng tôi không bán, trao đổi hoặc cho thuê dữ liệu chi tiêu/thu nhập cá nhân của bạn cho bên thứ ba.",
                         "Chia sẻ dữ liệu hạn chế chỉ xảy ra cho chức năng thiết yếu của ứng dụng:",
-                        "Dịch vụ chuyển giọng nói thành văn bản: Âm thanh giọng nói để chuyển đổi (tạm thời, không lưu trữ)",
-                        "Firebase AI: Mô tả chi tiêu để phân loại (tạm thời, không lưu trữ)",
-                        "Không sử dụng dịch vụ phân tích, quảng cáo hoặc theo dõi",
+                        "Dịch vụ chuyển giọng nói thành văn bản: Âm thanh giọng nói để chuyển đổi trong 6 ngôn ngữ được hỗ trợ (tạm thời, không lưu trữ)",
+                        "Firebase AI: Mô tả giao dịch để phân loại (tạm thời, không lưu trữ)",
+                        "ML Training Tùy chọn: Các mẫu giao dịch ẩn danh (chỉ số tiền, danh mục, ngày) nếu bạn chọn tham gia - KHÔNG BAO GIỜ mô tả hoặc thông tin nhận dạng",
+                        "Không sử dụng dịch vụ phân tích, quảng cáo hoặc theo dõi người dùng",
                         "Dữ liệu tài chính của bạn hoàn toàn riêng tư trên thiết bị"
                     ]
                 },
@@ -953,10 +975,13 @@ export const quickSpendTranslations: QuickSpendTranslationDictionary = {
                     ],
                     rights: [
                         "Truy cập: Tất cả dữ liệu của bạn có thể truy cập trong ứng dụng",
-                        "Sửa đổi: Chỉnh sửa hoặc cập nhật bất kỳ chi tiêu nào bất cứ lúc nào",
-                        "Xóa: Xóa từng chi tiêu hoặc xóa tất cả dữ liệu",
-                        "Xuất dữ liệu: Xuất dữ liệu của bạn để sao lưu",
+                        "Sửa đổi: Chỉnh sửa hoặc cập nhật bất kỳ giao dịch chi tiêu hoặc thu nhập nào bất cứ lúc nào",
+                        "Xóa: Xóa từng giao dịch hoặc xóa tất cả dữ liệu",
+                        "Xuất: Xuất sang JSON (sao lưu đầy đủ với danh mục và cài đặt)",
+                        "Nhập: Nhập từ JSON với phát hiện trùng lặp tự động",
                         "Tắt AI: Tắt tính năng AI và sử dụng nhập thủ công",
+                        "Từ chối ML Training: Tắt thu thập dữ liệu ML training ẩn danh bất cứ lúc nào trong Cài đặt",
+                        "Danh mục Tùy chỉnh: Tạo danh mục cá nhân với biểu tượng và màu sắc tùy chỉnh",
                         "Gỡ cài đặt: Xóa ứng dụng sẽ xóa tất cả dữ liệu cục bộ"
                     ]
                 },
@@ -993,7 +1018,7 @@ export const quickSpendTranslations: QuickSpendTranslationDictionary = {
         },
         terms: {
             title: "Điều Khoản Dịch Vụ",
-            lastUpdated: "Cập nhật lần cuối: Tháng 1 2025",
+            lastUpdated: "Cập nhật lần cuối: Tháng 11 2025",
             introduction: {
                 title: "Giới Thiệu",
                 content: [
@@ -1013,12 +1038,15 @@ export const quickSpendTranslations: QuickSpendTranslationDictionary = {
             description: {
                 title: "Mô Tả Dịch Vụ",
                 content: [
-                    "Quick Spend là ứng dụng theo dõi chi tiêu cung cấp:",
-                    "Nhập giọng nói để ghi chi tiêu nhanh",
-                    "Phân loại tự động bằng AI",
-                    "Lưu trữ cơ sở dữ liệu SQLite cục bộ",
-                    "Thống kê và phân tích chi tiêu",
-                    "Hỗ trợ song ngữ (tiếng Anh và tiếng Việt)",
+                    "Quick Spend là ứng dụng theo dõi chi tiêu và thu nhập cung cấp:",
+                    "Nhập giọng nói để ghi giao dịch nhanh trong 6 ngôn ngữ (Tiếng Anh, Tiếng Việt, Tiếng Nhật, Tiếng Hàn, Tiếng Thái, Tiếng Tây Ban Nha)",
+                    "Phân loại tự động bằng AI với Gemini 2.5 Flash (15 lượt AI mỗi ngày + phân tích dự phòng không giới hạn)",
+                    "Lưu trữ cơ sở dữ liệu SQLite cục bộ với chức năng offline hoàn toàn",
+                    "13 danh mục mặc định (7 chi tiêu + 6 thu nhập) với tạo danh mục tùy chỉnh",
+                    "Thống kê, phân tích và so sánh xu hướng với xem lịch",
+                    "Xuất sang JSON và nhập với phát hiện trùng lặp",
+                    "Thu thập dữ liệu ML training ẩn danh tùy chọn (chỉ khi chọn tham gia, không bao giờ bao gồm mô tả hoặc thông tin nhận dạng)",
+                    "Hỗ trợ 6 loại tiền tệ với giao diện được bản địa hóa đầy đủ",
                     "Dịch vụ được cung cấp 'như hiện tại' và chúng tôi có quyền sửa đổi, tạm ngưng hoặc ngừng bất kỳ phần nào bất cứ lúc nào."
                 ]
             },
@@ -1047,22 +1075,25 @@ export const quickSpendTranslations: QuickSpendTranslationDictionary = {
                 ]
             },
             expenseData: {
-                title: "Dữ Liệu Chi Tiêu và Quyền Riêng Tư",
+                title: "Dữ Liệu Giao Dịch và Quyền Riêng Tư",
                 content: [
-                    "Bạn giữ toàn quyền sở hữu tất cả dữ liệu chi tiêu mà bạn nhập vào Dịch vụ.",
+                    "Bạn giữ toàn quyền sở hữu tất cả dữ liệu chi tiêu và thu nhập mà bạn nhập vào Dịch vụ.",
                     "Dữ liệu của bạn được lưu trữ cục bộ trên thiết bị và không được truyền đến máy chủ của chúng tôi.",
-                    "Dữ liệu hạn chế (mô tả chi tiêu) có thể được gửi đến dịch vụ AI chỉ để phân loại.",
-                    "Bạn có trách nhiệm sao lưu dữ liệu của mình nếu muốn.",
+                    "Dữ liệu hạn chế (mô tả giao dịch) có thể được gửi đến dịch vụ AI chỉ để phân loại.",
+                    "ML Training Tùy chọn: Nếu bạn chọn tham gia rõ ràng, các mẫu giao dịch ẩn danh (chỉ số tiền, danh mục, ngày) có thể được thu thập. KHÔNG BAO GIỜ mô tả, ID người dùng hoặc thông tin nhận dạng.",
+                    "Bạn có thể xuất dữ liệu sang JSON (sao lưu đầy đủ) và có trách nhiệm sao lưu nếu muốn.",
                     "Chúng tôi không chịu trách nhiệm về bất kỳ mất mát dữ liệu nào."
                 ]
             },
             aiServices: {
-                title: "Dịch Vụ AI",
+                title: "Dịch Vụ AI & Dữ Liệu ML Training",
                 content: [
-                    "Quick Spend sử dụng dịch vụ AI để phân loại chi tiêu tự động.",
-                    "Phân loại AI được cung cấp để thuận tiện và có thể không luôn chính xác.",
-                    "Bạn có thể xem lại và sửa đổi các danh mục do AI tạo bất cứ lúc nào.",
-                    "Bạn có thể tắt tính năng AI và sử dụng phân loại thủ công nếu muốn.",
+                    "Quick Spend sử dụng Firebase AI (Gemini 2.5 Flash) để phân tích và phân loại giao dịch tự động.",
+                    "Xử lý AI bao gồm giọng nói thành văn bản (6 ngôn ngữ) và hiểu ngôn ngữ tự nhiên với giới hạn hàng ngày 15 lượt Gemini cộng phân tích dự phòng không giới hạn.",
+                    "Phân loại AI được cung cấp để thuận tiện và có thể không luôn chính xác. Bạn có thể xem lại và sửa đổi các danh mục do AI tạo bất cứ lúc nào.",
+                    "ML Training Tùy chọn: Bạn có thể chọn tham gia đóng góp dữ liệu giao dịch ẩn danh (chỉ số tiền, danh mục, ngày) để giúp cải thiện các mô hình ML trong tương lai. Điều này KHÔNG BAO GIỜ bao gồm mô tả, ID người dùng hoặc bất kỳ thông tin nhận dạng nào.",
+                    "Bạn có thể từ chối thu thập dữ liệu ML training bất cứ lúc nào trong Cài đặt ứng dụng.",
+                    "Bạn có thể tắt hoàn toàn tính năng AI và sử dụng phân loại thủ công nếu muốn.",
                     "Chúng tôi không đảm bảo độ chính xác 100% của phân loại AI."
                 ]
             },
@@ -1081,7 +1112,8 @@ export const quickSpendTranslations: QuickSpendTranslationDictionary = {
                     "Dịch vụ được cung cấp trên cơ sở 'như hiện tại' và 'như có sẵn'.",
                     "Chúng tôi không đưa ra bảo đảm nào, rõ ràng hoặc ngụ ý, liên quan đến Dịch vụ.",
                     "Chúng tôi không đảm bảo rằng Dịch vụ sẽ không bị gián đoạn, an toàn hoặc không có lỗi.",
-                    "Theo dõi chi tiêu là cho mục đích cá nhân và không nên thay thế lời khuyên tài chính chuyên nghiệp.",
+                    "Theo dõi chi tiêu và thu nhập là cho mục đích cá nhân và không nên thay thế lời khuyên tài chính chuyên nghiệp.",
+                    "Phân loại AI và các mô hình ML được cung cấp để thuận tiện và có thể không luôn chính xác.",
                     "Bạn sử dụng Dịch vụ với rủi ro của riêng mình."
                 ]
             },
